@@ -1,0 +1,19 @@
+How website works?
+
+There are two main things when talking of website, 1st Browser and 2nd a Server.
+
+We type something in a browser, it could be any browser like google, yahoo, safari etc.
+
+And then that browser whatever we type sends to a server, asking for data.
+
+Using http/https protocol. If server permits, and gives the data, Browser shows it to us.
+
+That server can be located anywhere in the world, It doesn't matter.
+
+A server side contain, HTML, CSS, and JavaScript. HTML is body of website, CSS is styling
+
+and JavaScript give logic to website, And the sever which is the main thing, can be written
+
+in any language such as Python, Java, PHPP etc., We are gonna write server in Python
+
+in this course, obviously bc it is Python's course.

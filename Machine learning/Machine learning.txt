@@ -1,0 +1,41 @@
+What is machine learning!?
+
+It is training a machine, or giving it an ability to perform a function, just like humans.
+
+REMEMBER ---> How we created functions for a desired output by giving a specific input. But 
+
+In machine learning, Machine creates the functions based on the input and output.
+
+What machine learning Expert do?
+
+1 --> Import the Data
+
+2 --> Clear the Data
+
+3 --> Split Data into Training Set/Test Set
+
+4 --> Create a model
+
+5 --> Check the output
+
+6 --> Improve
+
+7 --> Repeat the process if needed.
+
+# Libraries we are gonna use!
+
+1 ---> NumPy = It's a library that helps us to use lists and arrays in Python. Specifally multi-dimensional arrays which are used more
+often in Machine learning.
+
+2 ---> pandas = pandas is used for what we call Data Analysis.
+
+3 ---> scikit-learn = scikit-learn is used in creating the model part.
+
+4 ---> matplotlib = Also, called a charting library, It allows us to visualize data in a very nice way.
+
+5 ---> jupyter notebook = Finally, we need jupyter notebook. It is really helpful when we do machine learning and 
+data science.
+
+6 ---> Kaggle = Kaggle is a community of machine learning experts, we can do a lot of stuffs here, such a see other people's
+notebook, part in competitions, and the best part we are gonna do is to get data from here, as we aren't facebook and
+amazon. We don't have any source of data, but kaggle provides us a lot of data to work upon.

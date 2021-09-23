@@ -1,0 +1,63 @@
+Locating Elements:
+
+driver.find_element_by_ – To find the first element matching the given locator argument. Returns a WebElement
+
+driver.find_elements_by_ – To find all elements matching the given locator argument. Returns a list of WebElement
+
+By ID
+
+<input id=”q” type=”text” />
+
+element = driver.find_element_by_id(“q”)
+
+By Name
+
+<input id=”q” name=”search” type=”text” />
+
+element = driver.find_element_by_name(“search”)
+
+By Class Name
+
+<div class=”username” style=”display: block;”>…</div>
+
+element = driver.find_element_by_class_name(“username”)
+
+By Tag Name
+
+<div class=”username” style=”display: block;”>…</div>
+
+element = driver.find_element_by_tag_name(“div”)
+
+By Link Text
+
+<a href=”#”>Refresh</a>
+
+element = driver.find_element_by_link_text(“Refresh”)
+
+By Partial Link Text
+
+<a href=”#”>Refresh Here</a>
+
+element = driver.find_element_by_partial_link_text(“Refresh”)
+
+By XPath
+
+<form id=”testform” action=”submit” method=”get”>
+
+Username: <input type=”text” />
+Password: <input type=”password” />
+
+</form>
+
+element = driver.find_element_by_xpath(“//form[@id=’testform’]/input[1]”)
+
+By CSS Selector
+
+<form id=”testform” action=”submit” method=”get”>
+
+<input class=”username” type=”text” />
+<input class=”password” type=”password” />
+
+</form>
+
+element = driver.find_element_by_css_selector(“form#testform>input.username”)

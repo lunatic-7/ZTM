@@ -1,0 +1,19 @@
+Web Scraping --> Web scraping means simply grabbing data from any site like amazon, flipkart ect by coding.
+It simply means downloading a web page, grabbing a data from that webpage, cleaning it up somehow, so that
+It's useful for us and using that data.
+
+Uses of web scraping:
+https://www.excellarate.com/blogs/web-scraping-introduction-applications-and-best-practices/#:~:text=Web%20scraping%20typically%20extracts%20large,show%20data%20from%20a%20website.
+
+In a web server, type /robots.txt, and it will give you info abt. if you can grab their data, what is allowed
+and what isn't etc., like www.facebook.com/robots.txt like this.
+
+# What is a Google Bot, Bing Bot etc.?
+
+A Google bot or bing bot scrapes data from websites to index them or,
+rank them on google web page, eg. If we ask for poems, them google
+checks all the websites and indexes them by looking at the key word 'poems',
+in each website. So, it means websites allow google to scrape data, for their
+good, but there are some info. which they don't want to be extracted, we can see that with/robots.txt
+as mentioned earlier. If a website don't show anything in robots.txt, it means they don't care google
+or anyone can extract any of their data.

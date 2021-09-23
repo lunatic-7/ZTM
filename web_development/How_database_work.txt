@@ -1,0 +1,213 @@
+All companies store data from a simple record book of a small business, maybe even on a journal or
+
+a piece of paper to massive companies like Amazon that need computers to store petabytes of data.
+
+Now, in order to store this information, pretty much every company and sometimes individuals to need
+
+something called a database.
+
+We saw in the last section how hard it was to have our server remember a new user.
+
+Every time the server crashed, the variable will get reset and then it would start all over.
+
+Or if we wanted to do a login or a sign and check and iterate through the emails and passwords, doing
+
+a loop through JavaScript, that's inefficient.
+
+That's where database come to the rescue.
+
+So let's ask ourselves, what is a database?
+
+A database is a collection of data.
+
+And what we mean by data, there are many forms of them, right, there can be numbers, there can be
+
+dates, there could be password hashes, there could be user information.
+
+Databases allow us to organize this data in a way that is useful to us, and it makes data management
+
+easy.
+
+And something came out of that, and it's called Database Management System, or DBMS for short.
+
+It's a collection of programs which allows us to access databases and work with data, and it also allows
+
+control access to database users.
+
+So a DBMS is something in this box.
+
+Something that allows us a tool, a piece of software that allows us to communicate.
+
+With the database store information that's useful for us and also allows us to update, insert, delete,
+
+Look-Up, whatever's in the database, and this idea of a DBMS really started to take shape in 1960s
+
+and now it is at the forefront of many exciting things.
+
+There's an entire industry of engineers that just work with databases because it is so important.
+
+Now, there are two types of DBMS that are really popular right now.
+
+And these two types are represented really well by postgreSQL and Mongo DB.
+
+Let's talk about the first one, which is relational database.
+
+And this is probably the most popular.
+
+You see that all of these are relational databases, postgre Oracle, SQL Server.
+
+You may have heard of MySQL, SQL Lite.
+
+These are all types of databases that have this relational database tag to them, and the beauty with
+
+them is that they're all pretty much similar.
+
+They all follow the same standard format.
+
+Relational databases consist of two or more tables with columns and rows.
+
+So in this case, users is a table and full name, user name text created at our columns and whatever
+
+values they have here are rows.
+
+Each row represents an entry in each column.
+
+So it's a very specific type of information like name, address or phone numbers.
+
+And then the relation between tables and field.
+
+It's called a schema in a relational database, the schema must be clearly defined before any information
+
+can be added.
+
+If we had Twitter, for example, you can see over here the types of tables that we would have and how
+
+we would organize it.
+
+We would have a user table, a tweet table, a following table.
+
+And we can connect all this information, for example, by connecting different pieces of the table.
+
+For example, the user name will be the same in the users table as it is in the tweets table.
+
+That way, we can say that the username and the tweets table is the foreign key of the username in the
+
+user's table and then from user.
+
+Will be the foreign key of username in the following table.
+
+Now, things like full name or ID, something that identifies each row in a table, is called a primary
+
+key.
+
+How do they actually communicate with a server with the back end?
+
+Well, all relational databases use something called SQL.
+
+And ask you all allows us to communicate, just like HTTP did between the front end and the back end
+
+with you all were able to communicate with the database and modify or get or update however we want.
+
+All right.
+
+So that's relational databases.
+
+What about the second type?
+
+The second type is called a non relational database or a non SQL database, and once again, there
+
+are many, many different types of databases with some cool names like coutchDB and HyperTable.
+
+Now, a Mongo DB or a non relational database lets you build an application without having to define
+
+the schema first, unlike a relational database.
+
+If we go back to relational database, this schema or these tables have to kind of be predefined, right?
+
+We need to know how our app is going to look, make these tables so that once the app is public, we
+
+can start entering user information and tweets and followers.
+
+With a non SQL or non relational database, we can just define it as we go and they all have different
+
+ways of storing this information.
+
+So each one is very, very different.
+
+And this is another powerful reason to use a non relational database, is that if your data requirements
+
+aren't clear at the outset of your project and maybe you have a massive amount of unstructured data,
+
+you may not have the luxury of developing a relational database with a clearly defined schema.
+
+They offer instead a greater flexibility in that a non relational database are more like folders, just
+
+assembling related information of all types.
+
+Now, Mongo DB is something called document oriented, it stores information as documents.
+
+Let me illustrate this point to you.
+
+I have my desktop here with two folders.
+
+One is a really relational database and here have users tweets, profile following.
+
+And you can think of relational databases with this type of storage where this folder live somewhere
+
+on a computer that stores this information, and any time we need to ask a database for something,
+
+well, we grab the users.
+
+And if we also want to grab the tweets of the user, we find the user that we're interested in, then
+
+find the tweets of the user that we're also interested in with the foreign key that links to the users.
+
+And we can also find however many followers that user has.
+
+We grab that information and display it on our Web app.
+
+Mongo DB, on the other hand, will actually have each user as a document.
+
+So if I wanted to grab the first user, well, I just grabbed this document and it has all the followers,
+
+the tweets, the profile, everything is in this one document.
+
+And you might be thinking Mongo DB looks like a better choice than having this.
+
+Way of doing things right.
+
+Well, it depends on your need, and that's why database's is such a complex topic.
+
+It really, really depends on your situation.
+
+You can see this Mongo DB way being very useful if you have something like a profile, maybe a LinkedIn
+
+profile.
+
+But if you needed something where you're working with just following data or just tweets data, maybe
+
+with the tweets you want to see what is the average tweet size?
+
+Well, it's really easy to just grab this file and calculate that versus this way where you might have
+
+to extract it from each one of the users.
+
+So it really depends on your needs.
+
+When we look at relational versus non relational databases, you can think of relational as each table
+
+has a blog post, a blog tag, a blog comment, and it links these tables to give you the blog information
+
+versus a non relational that stores this entire blog post in an entry and has comments, tax categories
+
+and all other related data just in one single place.
+
+So what does Mongo DB use to communicate?
+
+If we go back to our example here, we had SQL relational databases such as postgres or
+
+Mongo DB has its own what we call query language, and it is just the Mongo DB query language.
+
+But they both aim to do the same thing, that is to communicate with the database, provide an easy
+
+way for the server to communicate with the database.
