@@ -2,17 +2,17 @@
 
 from twilio.rest import Client
 
-account_sid = 'AC1e0b46365218f59dbcfcf64bcb771d90'
-auth_token = 'a97c0523ec0bc7497b30aff62eb8b052'
+account_sid = 'AC1e0b46*************'
+auth_token = 'a97c0523ec0bc************'
 client = Client(account_sid, auth_token)
 
 message = client.messages.create(
-    messaging_service_sid='MG10e87d76cf20afc258d800875729843c',
+    messaging_service_sid='MG10e87d****************8',
     body="Hi, Mohammd Nadeem. I am really dissapointed to tell you that,"
          " Your son Saqib Nadeem has been expelled from Learner's Paradise"
          " Public School, Due to indulgence in fighting cause along with his 4"
          " friends, For any further information, Kindly visit school on 19/sept.",
-    to='+919821471512'
+    to='+91*******'
 )
 
 print(message.sid)

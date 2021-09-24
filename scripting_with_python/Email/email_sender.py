@@ -15,7 +15,7 @@ from email.message import EmailMessage
 
 email = EmailMessage()
 email['from'] = 'Wasif Nadeem'
-email['to'] = 'wasifnadeem1573@gmail.com'
+email['to'] = 'wasifnadeem***********'
 email['subject'] = 'You are going to be killed tonight...'
 
 email.set_content('I am a Python Master, BEWARE OF ME 👿')
@@ -23,6 +23,6 @@ email.set_content('I am a Python Master, BEWARE OF ME 👿')
 with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
     smtp.ehlo()  # To initialize the server
     smtp.starttls()  # tls is an encryption mechanism, to connect securely to sever.
-    smtp.login('wasif1607@gmail.com', '9871598177ray')  # email and password of sender
+    smtp.login('wasif16**********', '**********')  # email and password of sender
     smtp.send_message(email)
     print('all good boss!')
